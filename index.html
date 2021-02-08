@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="menu">
+            <a href="#" class="brand">
+                <img src="img/logo.png" alt="ACDC">
+                <span class="brand">ACDC</span>
+            </a>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+            </div>
+        </nav>
+        
+        <header class="header">
+            <div class="hero">
+                <div class="overlay"></div>
+                <h2>Get up to 40% Off New Arrival</h2>
+                <button>Shop Now</button>
+            </div>
+            <a href="#" class="feature-1">
+                <div class="overlay"></div>
+                <h4 class="price">IDR 250K</h4>
+                <p>Flanel</p>
+            </a>
+            <a href="#" class="feature-2">
+                <div class="overlay"></div>
+                <h4 class="price">IDR 150K</h4>
+                <p>T-Shirt</p>
+            </a>
+        </header>
+    </div>
+    
+    <script>
+
+        const menu = document.querySelector('.hamburger-menu');
+        const nav = document.querySelector('.menu-list ul')
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('active')
+        });
+
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('slide')
+        });
+        
+    </script>
+</body>
+</html>
