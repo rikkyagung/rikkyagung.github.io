@@ -1,0 +1,61 @@
+#services {
+    background-color: $secondaryColor;
+    width: 100%;
+    padding: $paddingLarge;
+
+    .section-title {
+        color: $textColor;
+        font-size: $big;
+        font-weight: 600;
+    }
+}
+
+.card {
+    background-color: $tersierColor;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border: none;
+    color: $textColor;
+    transition: $anime;
+    box-shadow: $shadow rgba(50,51,81,0.5);
+
+    &:hover {
+        transform: translateY(-8px);
+        transition: $anime;
+
+        img {
+            filter: brightness(.9) contrast(1.4);
+            transition: $anime;
+        }
+    }
+
+    img {
+        height: 150px;
+        object-fit: contain;
+        filter: brightness(.8) contrast(1.2);
+        transition: $anime;
+    }
+
+    .card-title {
+        font-size: $large;
+    }
+
+    .card-text {
+        opacity: .6;
+        font-weight: 300;
+        letter-spacing: .3px;
+        line-height: 1.5;
+    }
+}
+
+.first-service {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.second-service {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

@@ -1,0 +1,80 @@
+footer {
+    background-color: $secondaryColor;
+    padding: $paddingLarge;
+    color: $textColor;
+}
+
+.left-footer {
+    h4 {
+        font-size: $largest;
+        letter-spacing: .3px;
+    }
+
+    .text {
+        font-weight: 300;
+        letter-spacing: .3px;
+    }
+
+    .button {
+        display: block;
+        width: 9.5rem;
+        text-decoration: none;
+        color: $textColor;
+        background-image: $gradientColor;
+        border: 2px solid transparent;
+        padding: $paddButton;
+        border-radius: $radius;
+        margin: auto;
+        transition: $anime;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: $anime;
+        }
+    }
+}
+
+.right-footer {
+    .text {
+        font-size: $large;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
+
+    .socmed a {
+        display: flex;
+        @include flexStyle();
+        padding: .8rem;
+        margin: 0 .7rem;
+        border-radius: 50px;
+        border: 2px solid $primaryColor;
+        transition: $anime;
+
+        &:hover {
+            background-color: $primaryColor;
+            transform: scale(1.1);
+            transition: $anime;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+footer p {
+    font-size: $smallest;
+    font-weight: 300;
+    letter-spacing: .3px;
+
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+
+        &:hover {
+            color: $primaryColor;
+            text-decoration: underline;
+        }
+    }
+}

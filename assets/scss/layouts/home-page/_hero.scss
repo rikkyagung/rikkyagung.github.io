@@ -1,0 +1,60 @@
+#hero {
+    height: 80vh;
+    background-color: $secondaryColor;
+    color: $textColor;
+}
+
+.myself {
+    margin-top: -3rem;
+    letter-spacing: 1px;   
+}
+
+h1.home-page-title {
+    font-weight: 800;
+    font-size: $biggest;
+}
+
+p.site-subtitles {
+    font-size: $large;
+}
+
+.button a {
+    text-decoration: none;
+    display: block;
+
+    &:first-child {
+        width: 9.5rem;
+        background-color: $primaryColor;
+        border: 2px solid transparent;
+        padding: $paddButton;
+        border-radius: $radius;
+        font-size: $base;
+        transition: $anime;
+        color: $textColor;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: $anime;
+        }
+    }
+
+    &:last-child {
+        width: 7.5rem;
+        background-color: transparent;
+        border: 2px solid $primaryColor;
+        padding: $paddButton;
+        border-radius: $radius;
+        transition: $anime;
+        color: $textColor;
+
+        &:hover {
+            background-color: $primaryColor;
+            transform: scale(1.1);
+            transition: $anime;
+        }
+    }
+}
+
+svg.feathers:hover {
+    transform: scale(1.3);
+}

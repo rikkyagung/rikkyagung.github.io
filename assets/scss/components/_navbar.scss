@@ -1,0 +1,125 @@
+.container-fluid {
+    padding: 0;
+}
+
+.menu {
+    height: 20vh;
+    display: flex;
+    padding: 1.3rem 4.5rem;
+    background-color: $secondaryColor;
+}
+
+ul {
+    display: flex;
+    @include flexStyle(flex-end);
+    width: 100%;
+}
+
+li {
+    display: flex;
+    @include flexStyle(space-evenly);
+    width: 13%;
+    height: 50px;
+    font-size: $small;
+
+    a {
+        position: relative;
+        text-decoration: none;
+        padding: .8rem;
+        color: $textColor;
+        font-weight: 300;
+        opacity: .8;
+        letter-spacing: .2px;
+
+        &:hover {
+            opacity: 1;
+            color: $textColor;
+
+            &::before {
+                content: '';
+                width: 70%;
+                transition: $anime;
+            }
+        }
+
+        &::before {
+            @include pseudoEl();
+            width: 0;
+            bottom: .2rem;
+            height: .2rem;
+            border-radius: 3px;
+            background-color: $primaryColor;
+            transition: $anime;
+        }
+    }
+}
+
+li.active a {
+    position: relative;
+    color: $primaryColor;
+    font-weight: 600;
+    opacity: 1;
+
+    &::before {
+        @include pseudoEl();
+        bottom: .2rem;
+        background-color: $primaryColor;
+        width: 70%;
+    }
+}
+
+.hamburger-menu {
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    display: none;
+    @include flexStyle();
+
+    .bar {
+        left: 15%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.6rem;
+        height: .2rem;
+        border-radius: 2px;
+        background-color: $textColor;
+        transition: $anime;
+        z-index: 3;
+
+        &::before,
+        &::after {
+            @include pseudoEl();
+            left: 0;
+            width: inherit;
+            height: inherit;
+            border-radius: 2px;
+            background-color: $textColor;
+            transition: top 0.3s 0.3s, transform 0.3s;
+        }
+
+        &::before {
+            top: -.5rem;
+        }
+
+        &::after {
+            top: .5rem;
+        }
+    }
+}
+
+.hamburger-menu.active .bar {
+    background-color: transparent;
+
+    &::before {
+        top: 0;
+        transform: rotate(-45deg);
+        transition: top 0.3s, transform 0.3s .2s;
+    }
+
+    &::after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 0.3s, transform 0.3s .2s;
+    }
+}
