@@ -1,0 +1,26 @@
+#about-large {
+    background-color: $secondaryColor;
+    color: $textColor;
+    padding: $paddingLarge;
+
+    .site-title {
+        font-size: $bigger;
+        font-weight: 600;
+    }
+
+    .section-title {
+        font-size: $big;
+    }
+
+    p {
+        font-size: $large;
+        font-weight: 300;
+        letter-spacing: .2px;
+        line-height: 2;
+
+        span {
+            font-weight: 600;
+            color: $primaryColor;
+        }
+    }
+}

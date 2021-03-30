@@ -1,0 +1,10 @@
+@mixin flexStyle($justify: center, $align: center, $direction: row) {
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin pseudoEl($content: '', $pos: absolute) {
+    content: $content;
+    position: $pos;
+}

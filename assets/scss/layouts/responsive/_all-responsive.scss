@@ -1,0 +1,156 @@
+/*** Responsive Breakpoints ***/
+
+@media screen and (max-width: 991px) {
+    li {
+        width: 17%;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .menu.sticky {
+        @include flexStyle();
+        right: 0;
+        top: 0;
+        background-color: $primaryColor;
+        box-shadow: $shadow rgba(104,83,250,0.5);
+        transition: background-color .8s;
+    }
+
+    .menu {
+        position: fixed;
+        @include flexStyle(flex-end);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        height: 10vh;
+        transition: background-color .8s;
+    }
+
+    ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $primaryColor;
+        height: 100vh;
+        @include flexStyle(space-evenly, center, column);
+        padding: 0;
+        z-index: 3;
+        transform: translateY(-100%);
+        transition: all .9s;
+    }
+
+    ul.slide {
+        transform: translateY(0);
+        transition: all .9s;
+    }
+
+    li {
+        text-align: center;
+        width: 100%;
+
+        a {
+            display: block;
+            padding: 2rem;
+            width: 100%;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    li.active a {
+        color: $textColor;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 2.5rem;
+        transition: $anime;
+        position: fixed;
+        z-index: 3;
+        right: 0;
+    }
+
+    aside {
+        visibility: hidden;
+    }
+
+    #hero {
+        height: 100vh;
+    }
+
+    .left-footer {
+        .button {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 576px) {
+    .menu {
+        padding: 0;
+    }
+
+    .hamburger-menu {
+        margin-right: .8rem;
+    }
+
+    #hero,
+    #about,
+    #services,
+    #projects,
+    #skills,
+    footer {
+        padding: $paddingSmall
+    }
+
+    #about-large {
+        padding: 5rem 1.5rem;
+    }
+
+    .my-self {
+        margin-top: 2.5rem;
+    }
+
+    h1.site-title {
+        font-size: $bigger;
+    }
+
+    p.site-subtitles {
+        font-size: $base;
+    }
+
+    .card {
+        width: 93%;
+
+        &:hover {
+            transform: translateY(0);
+
+            img {
+                filter: brightness(.8) contrast(1.2);
+            }
+        }
+    }
+
+    .first-service {
+        border-top-right-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+        margin-bottom: 1rem;
+    }
+
+    .second-service {
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+    }
+    
+    .right-footer {
+        .socmed a {
+            margin: 0 .6rem;
+        }
+    }
+}

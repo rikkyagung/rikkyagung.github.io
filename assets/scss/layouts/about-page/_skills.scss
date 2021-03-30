@@ -1,0 +1,23 @@
+#skills {
+    background-color: $tersierColor;
+    color: $textColor;
+    padding: $paddingLarge;
+}
+
+.skills-icon span {
+    background-color: $secondaryColor;
+    font-size: $base;
+    font-weight: 300;
+    opacity: .6;
+    width: 150px;
+    min-width: 15%;
+    border-radius: 2px;
+    box-shadow: $shadow rgba(44,43,61,0.5);
+    transition: $anime;
+
+    &:hover {
+        opacity: 1;
+        transform: translateY(-5px);
+        transition: $anime;
+    }
+}

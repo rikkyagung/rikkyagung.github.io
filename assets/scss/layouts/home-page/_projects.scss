@@ -1,0 +1,48 @@
+#projects {
+    background-color: $tersierColor;
+    padding: $paddingLarge;
+    color: $textColor;
+
+    .section-title {
+        font-size: $big;
+        font-weight: 600;
+    }
+}
+
+.card-project {
+    background-color: $secondaryColor !important;
+    box-shadow: $shadow rgba(44,43,61,0.5);
+
+    img {
+        filter: brightness(.8) contrast(1.2);
+    }
+
+    .card-title {
+        font-size: $large;
+        letter-spacing: .2px;
+    }
+
+    p.card-text {
+        opacity: .6;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: .2px;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        width: 9.5rem;
+        background-color: $primaryColor;
+        color: $textColor;
+        border-radius: $radius;
+        border: 2px solid transparent;
+        padding: $paddButton;
+        cursor: not-allowed;
+        opacity: .5;
+
+        &:active {
+            pointer-events: none;
+        }
+    }
+}
