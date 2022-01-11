@@ -1,35 +1,49 @@
 // Color
-$gradientColor : linear-gradient(to right top, #6a55f8, #6853fa, #6650fc, #644efd, #624bff);
-$primaryColor : #6266f5;
-$secondaryColor : #2C2B3D;
-$tersierColor : #323351;
-$textColor : #EFEFEF;
+$primary-color : #6266F5;
+$primary-dark-color : #2B2C46;
+$primary-darker-color :#27293F;
+$secondary-color : #282736;
+$tersier-color : #EFEFEF;
 
 // Font Family
 $fontFamily : 'Poppins', sans-serif;
 
 // Font Size
-$biggest : 3.5rem;
-$bigger : 3rem;
-$big : 2rem;
-$largest : 1.5rem;
-$large : 1.3rem;
-$base : 1rem;
-$small : .95rem;
-$smallest : .9rem;
+$biggest : 3.5rem; // 56px
+$bigger : 3rem; // 48px
+$big : 2rem; // 32px
+$largest : 1.5rem; // 24px
+$larger : 1.3rem; // 20.8px
+$large : 1.15rem; // 18.4px
+$base : 1rem; // 16px
+$smallest : .875rem; // 14px
+
+// Font Weight
+$thickest : 700;
+$thick : 600;
+$medium : 500;
+$thin : 300;
+
+// Line Height
+$line-large : 1.8;
+$line-small : 1.6;
+
+// Letter Spacing
+$space : .3px;
 
 //  Box Shadow
-$shadow : 0px 5px 15px 0px;
+$shadow-card : 0px 13px 8px -7px rgb(36, 38, 59);
 
 // Padding
-$paddingLarge : 3rem 7rem;
-$paddingSmall : 1.9rem 1.5rem;
+$padding-large : 2.5rem 9rem;
+$padding-medium : 2.3rem 5rem;
+$padding-small : 1.9rem 1.5rem;
 
 // Padding for Button
-$paddButton : .6rem .8rem;
+$padding-btn : .6rem .8rem;
 
 // Border Radius for Button
 $radius : 21px;
 
 // Animation
-$anime : all .3s;
+$animation : all .3s ease-in-out;

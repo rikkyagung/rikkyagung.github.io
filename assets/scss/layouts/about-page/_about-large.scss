@@ -1,6 +1,6 @@
-#about {
-    color: $tersier-color;
+#about-large {
     padding: $padding-large;
+    color: $tersier-color;
     background-color: $primary-dark-color;
 
     .section-title {
@@ -10,7 +10,7 @@
     }
 }
 
-.about-text {
+.about-me-text {
     font-size: $larger;
     font-weight: $thin;
     letter-spacing: $space;
@@ -19,15 +19,5 @@
     span {
         font-weight: $thick;
         color: $primary-color;
-    }
-}
-
-.about-button {
-    @include button( 9.5rem, transparent, 2px solid $primary-color);
-
-    &:hover {
-        @include hoverButton;
-        background-color: $primary-color;
-        color: $tersier-color;
     }
 }

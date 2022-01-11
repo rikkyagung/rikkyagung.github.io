@@ -1,26 +1,24 @@
-#about-large {
-    background-color: $secondaryColor;
-    color: $textColor;
-    padding: $paddingLarge;
+#about-hero {
+    height: 80vh;
+    position: relative;
+    background: url(../img/bg-image.jpg) no-repeat fixed center;
+    background-size: cover;
+    color: $tersier-color;
+    padding: $padding-large;
 
-    .site-title {
-        font-size: $bigger;
-        font-weight: 600;
+    svg {
+        position: absolute;
+        bottom: 0;
     }
+}
 
-    .section-title {
-        font-size: $big;
-    }
+.about-page-title {
+    font-size: $biggest;
+    font-weight: $thickest;
+    margin-bottom: 1rem;
+}
 
-    p {
-        font-size: $large;
-        font-weight: 300;
-        letter-spacing: .2px;
-        line-height: 2;
-
-        span {
-            font-weight: 600;
-            color: $primaryColor;
-        }
-    }
+p.site-subtitle {
+    font-size: $larger;
+    font-weight: $thin;
 }

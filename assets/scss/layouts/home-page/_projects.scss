@@ -1,48 +1,72 @@
 #projects {
-    background-color: $tersierColor;
-    padding: $paddingLarge;
-    color: $textColor;
+    padding: $padding-large;
+    color: $tersier-color;
+    background-color: $primary-dark-color;
 
     .section-title {
         font-size: $big;
-        font-weight: 600;
+        font-weight: $thick;
+        margin-bottom: 2.8rem;
     }
 }
 
-.card-project {
-    background-color: $secondaryColor !important;
-    box-shadow: $shadow rgba(44,43,61,0.5);
+.first-card-project,
+.second-card-project,
+.third-card-project {
+    background-color: $primary-darker-color !important;
+    box-shadow: $shadow-card;
+    overflow: hidden;
 
     img {
         filter: brightness(.8) contrast(1.2);
+        transition: $animation;
+        object-fit: contain;
+
+        &:hover {
+            filter: brightness(.8) contrast(1.35);
+            transition: $animation;
+            transform: scale(1.025);
+        }
     }
 
     .card-title {
-        font-size: $large;
-        letter-spacing: .2px;
+        font-size: $larger;
     }
 
     p.card-text {
         opacity: .6;
-        font-weight: 300;
-        line-height: 1.5;
-        letter-spacing: .2px;
+        font-weight: $thin;
+        line-height: $line-large;
+        letter-spacing: $space;
     }
 
     a {
-        text-decoration: none;
-        display: block;
-        width: 9.5rem;
-        background-color: $primaryColor;
-        color: $textColor;
-        border-radius: $radius;
-        border: 2px solid transparent;
-        padding: $paddButton;
-        cursor: not-allowed;
-        opacity: .5;
+        svg {
+            opacity: .6;
+            transition: $animation;
 
-        &:active {
-            pointer-events: none;
+            path {
+                transition: $animation;
+            }
+        }
+
+        &:hover svg {
+            transition: $animation;
+            opacity: 1;
+        }
+
+        &:hover path {
+            fill: $primary-color;
+            transition: $animation;
         }
     }
+}
+
+.first-card-project,
+.second-card-project {
+    margin-bottom: 2.5rem;
+}
+
+.icon {
+    width: 5rem;
 }

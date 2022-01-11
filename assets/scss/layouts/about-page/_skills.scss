@@ -1,23 +1,52 @@
 #skills {
-    background-color: $tersierColor;
-    color: $textColor;
-    padding: $paddingLarge;
+    padding: $padding-large;
+    color: $tersier-color;
+    background-color: $primary-dark-color;
+
+    .section-title {
+        font-size: $big;
+        font-weight: $thick;
+        margin-bottom: 2.8rem;
+    }
 }
 
-.skills-icon span {
-    background-color: $secondaryColor;
-    font-size: $base;
-    font-weight: 300;
-    opacity: .6;
-    width: 150px;
-    min-width: 15%;
-    border-radius: 2px;
-    box-shadow: $shadow rgba(44,43,61,0.5);
-    transition: $anime;
+.skills-icon {
+    gap: .75rem;
 
-    &:hover {
-        opacity: 1;
-        transform: translateY(-5px);
-        transition: $anime;
+    span {
+        background-color: $primary-darker-color;
+        font-weight: $thin;
+        width: 150px;
+        border-radius: 2px;
+        box-shadow: $shadow-card;
+        transition: $animation;
+
+        &:hover {
+            transform: translateY(-8px);
+            transition: $animation;
+
+            i {
+                color: $primary-color;
+                opacity: 1;
+            }
+
+            code {
+                opacity: 1;
+            }
+        }
+
+        i {
+            opacity: .6;
+            transition: $animation;
+        }
+
+        code {
+            color: $tersier-color;
+            font-family: $fontFamily;
+            font-weight: $thin;
+            font-size: $base;
+            opacity: .6;
+            transition: $animation;
+        }
     }
 }

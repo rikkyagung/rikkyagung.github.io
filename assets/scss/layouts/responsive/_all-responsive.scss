@@ -1,25 +1,35 @@
-/*** Responsive Breakpoints ***/
-
-@media screen and (max-width: 991px) {
-    li {
-        width: 17%;
-    }
-}
-
-/* Tablet */
+// Responsive Breakpoints //
+/* For Tablet */
 @media screen and (max-width: 768px) {
-    .menu.sticky {
-        @include flexStyle();
+    .menu,
+    #hero,
+    #about,
+    #services,      /*** padding whole pages ***/
+    #projects,
+    #about-hero,
+    #about-large,
+    #skills,
+    footer {
+        padding: $padding-medium;
+    }
+
+    #hero,      /*** height hero section whole pages ***/
+    #about-hero {
+        height: 100vh;
+    }
+
+    .menu.fixed {
+        @include flexStyle(space-between);
         right: 0;
         top: 0;
-        background-color: $primaryColor;
-        box-shadow: $shadow rgba(104,83,250,0.5);
-        transition: background-color .8s;
+        background-color: $primary-color;
+        box-shadow: 0px 3px 8px 0px rgba(104 , 83, 250, .9);
+        transition: background-color .8s ease-in-out;
     }
 
     .menu {
         position: fixed;
-        @include flexStyle(flex-end);
+        @include flexStyle(space-between);
         top: 0;
         left: 0;
         bottom: 0;
@@ -29,22 +39,26 @@
         transition: background-color .8s;
     }
 
+    .logo img {
+        height: 60px;
+    }
+
     ul {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: $primaryColor;
+        background-color: $primary-color;
         height: 100vh;
         @include flexStyle(space-evenly, center, column);
         padding: 0;
         z-index: 3;
         transform: translateY(-100%);
-        transition: all .9s;
+        transition: all .7s ease-in-out;
     }
 
     ul.slide {
         transform: translateY(0);
-        transition: all .9s;
+        transition: all .7s ease-in-out;
     }
 
     li {
@@ -63,13 +77,14 @@
     }
 
     li.active a {
-        color: $textColor;
+        color: $tersier-color;
+        border-left: .2rem solid $tersier-color;
     }
 
     .hamburger-menu {
         display: flex;
         margin-right: 2.5rem;
-        transition: $anime;
+        transition: $animation;
         position: fixed;
         z-index: 3;
         right: 0;
@@ -79,8 +94,10 @@
         visibility: hidden;
     }
 
-    #hero {
-        height: 100vh;
+    .second-card-project {
+        .col-md-6:first-child {
+            order: 2;
+        }
     }
 
     .left-footer {
@@ -90,67 +107,50 @@
     }
 }
 
-/* Phone */
+/* For Phone */
 @media screen and (max-width: 576px) {
-    .menu {
-        padding: 0;
+    .menu,
+    #hero,
+    #about,
+    #services,
+    #projects,      /*** padding whole pages ***/
+    #about-hero,
+    #about-large,
+    #skills,
+    footer {
+        padding: $padding-small;
+    }
+
+    .home-page-title,   /*** font-size title whole pages ***/
+    .about-page-title {
+        font-size: $bigger;
+    }
+
+    p.site-subtitles,
+    p.site-subtitle {   /*** style site-subtitle whole page ***/
+        font-size: $large;
+    }
+
+    #about .section-title,
+    #services .section-title,    /*** font-size all header section ***/
+    #projects .section-title {
+        font-size: 1.8rem;
+    }
+
+    .about-text,    /*** font-size about-me at home-page and about-page ***/
+    .about-me-text {
+        font-size: $large;
     }
 
     .hamburger-menu {
         margin-right: .8rem;
     }
 
-    #hero,
-    #about,
-    #services,
-    #projects,
-    #skills,
-    footer {
-        padding: $paddingSmall
+    .myself {
+        margin-top: 1.5rem;
     }
 
-    #about-large {
-        padding: 5rem 1.5rem;
-    }
-
-    .my-self {
-        margin-top: 2.5rem;
-    }
-
-    h1.site-title {
+    .card-icon i{
         font-size: $bigger;
-    }
-
-    p.site-subtitles {
-        font-size: $base;
-    }
-
-    .card {
-        width: 93%;
-
-        &:hover {
-            transform: translateY(0);
-
-            img {
-                filter: brightness(.8) contrast(1.2);
-            }
-        }
-    }
-
-    .first-service {
-        border-top-right-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-        margin-bottom: 1rem;
-    }
-
-    .second-service {
-        border-top-left-radius: .25rem;
-        border-bottom-left-radius: .25rem;
-    }
-    
-    .right-footer {
-        .socmed a {
-            margin: 0 .6rem;
-        }
     }
 }

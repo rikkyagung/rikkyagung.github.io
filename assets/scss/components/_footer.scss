@@ -1,59 +1,50 @@
 footer {
-    background-color: $secondaryColor;
-    padding: $paddingLarge;
-    color: $textColor;
+    padding: $padding-large;
+    color: $tersier-color;
 }
 
 .left-footer {
-    h4 {
+    h3 {
         font-size: $largest;
-        letter-spacing: .3px;
+        letter-spacing: $space;
     }
 
     .text {
-        font-weight: 300;
-        letter-spacing: .3px;
+        font-weight: $thin;
+        letter-spacing: $space;
+        opacity: .6;
     }
 
     .button {
+        @include button();
         display: block;
-        width: 9.5rem;
-        text-decoration: none;
-        color: $textColor;
-        background-image: $gradientColor;
-        border: 2px solid transparent;
-        padding: $paddButton;
-        border-radius: $radius;
         margin: auto;
-        transition: $anime;
 
         &:hover {
-            transform: scale(1.1);
-            transition: $anime;
+            @include hoverButton();
         }
     }
 }
 
 .right-footer {
-    .text {
-        font-size: $large;
-        letter-spacing: .5px;
-        font-weight: 300;
+    h3 {
+        font-size: $largest;
+        letter-spacing: $space;
     }
 
     .socmed a {
         display: flex;
         @include flexStyle();
         padding: .8rem;
-        margin: 0 .7rem;
-        border-radius: 50px;
-        border: 2px solid $primaryColor;
-        transition: $anime;
+        border-radius: 50%;
+        border: 2px solid $primary-color;
+        transition: $animation;
+        opacity: .6;
 
         &:hover {
-            background-color: $primaryColor;
-            transform: scale(1.1);
-            transition: $anime;
+            @include hoverButton();
+            background-color: $primary-color;
+            opacity: 1;
         }
 
         span {
@@ -63,17 +54,21 @@ footer {
     }
 }
 
-footer p {
+hr {
+    height: 2px !important;
+}
+
+footer p.last-text {
     font-size: $smallest;
-    font-weight: 300;
-    letter-spacing: .3px;
+    font-weight: $thin;
+    letter-spacing: $space;
 
     a {
         text-decoration: none;
-        color: $primaryColor;
+        color: $primary-color;
 
         &:hover {
-            color: $primaryColor;
+            color: $primary-color;
             text-decoration: underline;
         }
     }

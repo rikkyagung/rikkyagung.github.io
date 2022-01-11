@@ -1,60 +1,54 @@
 #hero {
     height: 80vh;
-    background-color: $secondaryColor;
-    color: $textColor;
+    position: relative;
+    background: url(../img/bg-image.jpg) no-repeat fixed center;
+    background-size: cover;
+    color: $tersier-color;
+    padding: $padding-large;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
 
 .myself {
     margin-top: -3rem;
-    letter-spacing: 1px;   
 }
 
-h1.home-page-title {
-    font-weight: 800;
+.home-page-title {
+    font-weight: $thickest;
     font-size: $biggest;
+    margin-bottom: 1rem;
 }
 
 p.site-subtitles {
-    font-size: $large;
+    font-size: $larger;
+    font-weight: $thin;
 }
 
 .button a {
     text-decoration: none;
     display: block;
+    z-index: 1;
 
     &:first-child {
-        width: 9.5rem;
-        background-color: $primaryColor;
-        border: 2px solid transparent;
-        padding: $paddButton;
-        border-radius: $radius;
-        font-size: $base;
-        transition: $anime;
-        color: $textColor;
+        @include button();
 
         &:hover {
-            transform: scale(1.1);
-            transition: $anime;
+            @include hoverButton;
         }
     }
 
     &:last-child {
-        width: 7.5rem;
-        background-color: transparent;
-        border: 2px solid $primaryColor;
-        padding: $paddButton;
-        border-radius: $radius;
-        transition: $anime;
-        color: $textColor;
+        @include button(7.5rem, transparent, 2px solid $primary-color);
 
         &:hover {
-            background-color: $primaryColor;
-            transform: scale(1.1);
-            transition: $anime;
+            @include hoverButton;
+            background-color: $primary-color;
+
         }
     }
-}
-
-svg.feathers:hover {
-    transform: scale(1.3);
 }

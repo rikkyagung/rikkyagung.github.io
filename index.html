@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#2c2b3d">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Rikky Agung Nugraha | Front-End Developer</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+
+    <title>Rikky Agung Nugraha | Front End Web Developer</title>
 </head>
 <body>
     <!-- Wrapper -->
@@ -20,9 +37,12 @@
         <!-- Navbar -->
         <header>
             <nav class="menu">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo.svg" alt="Rikky Agung Nugraha | Front End Web Developer"></a>
+                </div>
                 <ul class="mb-0 ps-0">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="./about.html">About me</a></li>
+                    <li><a href="about.html">About me</a></li>
                 </ul>
                 <div class="hamburger-menu">
                     <div class="bar"></div>
@@ -36,25 +56,22 @@
             <div class="sidebar-content d-flex flex-column justify-content-evenly">
                 <a target="_blank" href="https://facebook.com/rikkyagung">
                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" stroke="#EFEFEF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#EFEFEF" width="20" height="20" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="21" height="21" fill="#EFEFEF"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
                     </span>
                 </a>
                 <a target="_blank" href="https://linkedin.com/in/rikkyagung">
                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" stroke="#EFEFEF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#EFEFEF" width="20" height="20" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="21" height="21" fill="#EFEFEF"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
                     </span>
                 </a>
                 <a target="_blank" href="https://instagram.com/rikkyagung/">
                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" stroke="#EFEFEF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#EFEFEF" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="21" height="21" fill="#EFEFEF"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                     </span>
                 </a>
                 <a target="_blank" href="https://gitlab.com/rikkyagung">
                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" stroke="#EFEFEF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="21" height="21" fill="#EFEFEF"><path d="M105.2 24.9c-3.1-8.9-15.7-8.9-18.9 0L29.8 199.7h132c-.1 0-56.6-174.8-56.6-174.8zM.9 287.7c-2.6 8 .3 16.9 7.1 22l247.9 184-226.2-294zm160.8-88l94.3 294 94.3-294zm349.4 88l-28.8-88-226.3 294 247.9-184c6.9-5.1 9.7-14 7.2-22zM425.7 24.9c-3.1-8.9-15.7-8.9-18.9 0l-56.6 174.8h132z"/></svg>
                     </span>
                 </a>
             </div>
@@ -63,39 +80,36 @@
         <!-- End Sidebar -->
 
         <!-- hero -->
-        <section id="hero" class="d-flex justify-content-center align-items-center text-center">
-            <main class="my-self">
-                <div class="row gx-0">
+        <section id="hero" class="d-flex justify-content-center align-items-center text-center flex-column">
+            <main>
+                <div class="row myself gx-0">
                     <h1 class="home-page-title mb-3">Hi, I'm Agung ;).</h1>
                     <p class="site-subtitles">Junior Front-End Web Developer</p>
                 </div>
                 <div class="row gx-0">
-                    <div class="button d-flex justify-content-center align-items-center mt-5">
-                        <a href="mailto:rikkyagung11@gmail.com" class="me-2">Contact Me</a>
-                        <a href="./assets/document/CV - Rikky Agung Nugraha.pdf" class="ms-2">Get CV</a>
+                    <div class="col-md-12 button d-flex justify-content-center align-items-center mt-5 gap-3 flex-wrap">
+                        <a href="mailto:rikkyagung11@gmail.com">Contact Me</a>
+                        <a href="./assets/document/CV - Rikky Agung Nugraha.pdf">Get CV</a>
                     </div>
                 </div>
             </main>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2B2C46" fill-opacity="1" d="M0,320L48,288C96,256,192,192,288,181.3C384,171,480,213,576,234.7C672,256,768,256,864,218.7C960,181,1056,107,1152,69.3C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </section>
         <!-- End hero -->
         
         <!-- About Me -->
         <section id="about">
             <main>
-                <div class="row text-center mb-5">
-                    <div class="col-md-12">
-                        <h2 class="section-title">About Me</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="about-text col-md-12">
-                        <p>I'm a 24 year old <span>Junior Front-End</span> who loves coding and interested in design.</p>
+                <h2 class="section-title text-center" data-aos="fade-in">About Me</h2>
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-12 about-text mb-3">
+                        <p>I'm a 24 year old <span>Junior Front-End Web Developer</span> who loves coding and interested in design.</p>
                         <p>I recently liked web development especially front-end, and not much experience on it. Still learning all front-end stuff, especially <span>Javascript.</span></p>
                         <p>when I'm not coding, I like to play games or play guitar.</p>
                     </div>
-                </div>
-                <div class="row d-flex justify-content-center align-items-center">
-                    <a href="./about.html" class="about-button mt-3 text-center">See More</a>
+                    <div class="col-md-12 d-flex justify-content-center align-items-center">
+                        <a href="./about.html" class="about-button mt-3 text-center">See More</a>
+                    </div>
                 </div>
             </main>
         </section>
@@ -103,23 +117,27 @@
 
         <!-- My Services -->
         <section id="services">
-            <main class="d-flex flex-column justify-content-center align-items-center">
-                <h2 class="section-title mb-5">My Services</h2>
-                <div class="row">
-                    <div class="col-md-6 pe-0 ps-0">
-                        <div class="first-service card mx-auto">
-                            <img src="assets/img/services-1.svg" class="card-img-top pt-5" alt="coding">
-                            <div class="card-body text-center pt-4 px-4">
-                                <h3 class="card-title fw-bolder mb-3">Web Development</h3>
-                                <p class="card-text">Convert design into code with HTML and CSS.</p>
+            <main>
+                <h2 class="section-title text-center" data-aos="fade-in">My Services</h2>
+                <div class="row justify-content-center gx-0 gap-4">
+                    <div class="col-md-6 animate-services" data-aos="fade-up">
+                        <div class="services-card rounded p-3">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-laptop-code p-4"></i>
+                            </div>
+                            <div class="card-body text-center pt-3 px-4">
+                                <h3 class="card-title mb-3">Web Development</h3>
+                                <p class="card-text">Convert design from sketch into code with HTML, CSS and Javascript.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 pe-0 ps-0">
-                        <div class="second-service card mx-auto">
-                            <img src="assets/img/services-2.svg" class="card-img-top pt-5" alt="responsive design">
-                            <div class="card-body text-center pt-4 px-4">
-                                <h3 class="card-title fw-bolder mb-3">Responsive Design</h3>
+                    <div class="col-md-6 animate-services" data-aos="fade-up" data-aos-delay="100">
+                        <div class="services-card rounded p-3">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-mobile-alt p-4"></i>
+                            </div>
+                            <div class="card-body text-center pt-3 px-4">
+                                <h3 class="card-title mb-3">Responsive Design</h3>
                                 <p class="card-text">Make the website look nice, whether it's on mobile or desktop.</p>
                             </div>
                         </div>
@@ -132,17 +150,71 @@
         <!-- My Project -->
         <section id="projects" class="d-flex flex-column justify-content-center align-items-center">
             <main>
-                <div class="row">
-                    <h2 class="section-title text-center mb-5">My Project</h2>
-                </div>
-                <div class="card-project row g-0 bg-light position-relative rounded">
+                <h2 class="section-title text-center" data-aos="fade-in">My Project</h2>
+                <div class="row first-card-project g-0 bg-light position-relative rounded" data-aos="fade-up">
                     <div class="col-md-6 mb-md-0 p-md-4">
-                        <img src="./assets/img/1.png" class="w-100" alt="Event Registration">
+                        <a target="_blank" href="https://rikkyagung.github.io/clone-JMER/"><img src="./assets/img/project-1.png" class="w-100 h-100" loading="lazy" alt="Event Registration"></a>
                     </div>
-                    <div class="col-md-6 p-4 ps-md-4 d-flex flex-column justify-content-around">
-                        <h3 class="card-title mt-0 mb-3 fw-bolder">Event Registration</h3>
-                        <p class="card-text">This Application helped the employee to manage their events. Build with Bootstrap Framework.</p>
-                        <a href="projects.html" class="text-center disabled" tabindex="-1" onfocus="this.blur()">View Details</a>
+                    <div class="col-md-6 p-4 ps-md-4 d-flex flex-column justify-content-evenly">
+                        <h4 class="card-title mt-0 mb-3">Event Registration</h4>
+                        <p class="card-text">A web application for helped the employee to manage their events. View the event information, send invitation via email to participants, and scan their QR code when attending the event.<br>
+                        <span>Tools : HTML, CSS, Javascript, Bootstrap 4.</span></p>
+                        <div class="icon d-flex justify-content-around align-items-center">
+                            <a target="_blank" href="https://github.com/rikkyagung/clone-JMER">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22" fill="#EFEFEF"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                </span>
+                            </a>
+                            <a target="_blank" href="https://rikkyagung.github.io/clone-JMER/">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="19" height="19" fill="#EFEFEF"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"/></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row second-card-project g-0 bg-light position-relative rounded" data-aos="fade-up">
+                    <div class="col-md-6 p-4 ps-md-4 d-flex flex-column justify-content-evenly">
+                        <h4 class="card-title mt-0 mb-3">Personal Portfolio</h4>
+                        <p class="card-text">This is my first personal page. A minimalist dark theme, built from zero until completed page.<br>
+                        <span>Tools : HTML, CSS, Javascript, Bootstrap 5, SCSS.</span></p>
+                        <div class="icon d-flex justify-content-around align-items-center">
+                            <a target="_blank" href="https://gitlab.com/rikkyagung/rikkyagung.gitlab.io">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="21" height="21" fill="#EFEFEF"><path d="M105.2 24.9c-3.1-8.9-15.7-8.9-18.9 0L29.8 199.7h132c-.1 0-56.6-174.8-56.6-174.8zM.9 287.7c-2.6 8 .3 16.9 7.1 22l247.9 184-226.2-294zm160.8-88l94.3 294 94.3-294zm349.4 88l-28.8-88-226.3 294 247.9-184c6.9-5.1 9.7-14 7.2-22zM425.7 24.9c-3.1-8.9-15.7-8.9-18.9 0l-56.6 174.8h132z"/></svg>
+                                </span>
+                            </a>
+                            <a target="_blank" href="https://rikkyagung.gitlab.io">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="19" height="19" fill="#EFEFEF"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"/></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <a target="_blank" href="https://rikkyagung.gitlab.io"><img src="assets/img/project-2.png" class="w-100 h-100" loading="lazy" alt="Portfolio Website"></a>
+                    </div>
+                </div>
+                <div class="row third-card-project g-0 bg-light position-relative rounded" data-aos="fade-up">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                        <a target="_blank" href="https://rikkyagung.github.io/to-do-list/"><img src="./assets/img/project-4.png" class="w-100 h-100" loading="lazy" alt="Event Registration"></a>
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-4 d-flex flex-column justify-content-evenly">
+                        <h4 class="card-title mt-0 mb-3">To Do List</h4>
+                        <p class="card-text">My first Javascript project. Simple to do list built with DOM Javascript.<br>
+                        <span>Tools : HTML, CSS, Javascript, SCSS</span></p>
+                        <div class="icon d-flex justify-content-around align-items-center">
+                            <a target="_blank" href="https://github.com/rikkyagung/to-do-list">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22" fill="#EFEFEF"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                </span>
+                            </a>
+                            <a target="_blank" href="https://rikkyagung.github.io/to-do-list/">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="19" height="19" fill="#EFEFEF"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"/></svg>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -152,39 +224,39 @@
         <!-- Footer -->
         <footer class="text-center">
             <div class="row mx-0 mb-4">
-                <div class="left-footer col-md-6">
-                    <h4 class="mb-4">Let's discuss to make something</h4>
+                <div class="col-md-6 left-footer" data-aos="fade-up">
+                    <h3 class="mb-4">Let's discuss to make something</h3>
                     <p class="text mb-4">Interested in working together ?</p>
                     <a href="mailto:rikkyagung11@gmail.com" class="button">Let's do this</a>
                 </div>
-                <div class="right-footer col-md-6 d-flex justify-content-center align-items-center flex-column">
-                    <p class="text mb-4 px-0">Follow Me</p>
-                    <div class="socmed d-flex justify-content-center align-items-center">
+                <div class="col-md-6 right-footer d-flex justify-content-center align-items-center flex-column" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text mb-4 px-0">Follow Me</h3>
+                    <div class="socmed d-flex justify-content-center align-items-center gap-3 flex-wrap">
                         <a target="_blank" href="https://facebook.com/rikkyagung">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#EFEFEF" width="14" height="14" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15" fill="#EFEFEF"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
                             </span>
                         </a>
                         <a target="_blank" href="https://linkedin.com/in/rikkyagung">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#EFEFEF" width="14" height="14" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15" fill="#EFEFEF"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
                             </span>
                         </a>
                         <a target="_blank" href="https://instagram.com/rikkyagung/">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#EFEFEF" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16" fill="#EFEFEF"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                             </span>
                         </a>
                         <a target="_blank" href="https://gitlab.com/rikkyagung">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#EFEFEF" width="14" height="14" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15" fill="#EFEFEF"><path d="M105.2 24.9c-3.1-8.9-15.7-8.9-18.9 0L29.8 199.7h132c-.1 0-56.6-174.8-56.6-174.8zM.9 287.7c-2.6 8 .3 16.9 7.1 22l247.9 184-226.2-294zm160.8-88l94.3 294 94.3-294zm349.4 88l-28.8-88-226.3 294 247.9-184c6.9-5.1 9.7-14 7.2-22zM425.7 24.9c-3.1-8.9-15.7-8.9-18.9 0l-56.6 174.8h132z"/></svg>
                             </span>
                         </a>
                     </div>
                 </div>
             </div>
             <hr>
-            <p class="mb-0 mt-4">&copy;2021 Designed & Built by <a href="https://rikkyagung.gitlab.io/">Myself</a></p>
+            <p class="last-text mb-0 mt-4" data-aos="fade-in" data-aos-offset="0" data-aos-delay="200">&copy;2021 - Designed & Built by <a href="index.html">Agung</a></p>
         </footer>
         <!-- End Footer -->
     </div>
@@ -192,6 +264,10 @@
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Costum JS -->
     <script src="assets/js/index.js"></script>
 
