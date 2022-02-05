@@ -1,28 +1,20 @@
 // Hamburger Menu
 const menu = document.querySelector('.hamburger-menu');
-const nav = document.querySelector('.menu ul')
+const nav = document.querySelector('.menu ul');
 
 menu.addEventListener('click', () => {
-    menu.classList.toggle('active')
-});
-
-menu.addEventListener('click', () => {
-    nav.classList.toggle('slide')
+    menu.classList.toggle('active');
+    nav.classList.toggle('slide');
 });
 
 
 // Animate Fixed Navbar
 const navbar = document.querySelector('.menu');
 
-function scrollTop() {
-    const scroll = window.scrollY;
-    if (scroll > 70) {
-        navbar.classList.add('fixed')
-    } else {
-        navbar.classList.remove('fixed')
-    }
-}
-window.addEventListener('scroll', scrollTop);
+window.addEventListener('scroll', function() {
+    const scrolling = window.scrollY;
+    scrolling > 70 ? navbar.classList.add('fixed') : navbar.classList.remove('fixed');
+})
 
 
 // Animate Skills Icons Card AOS
@@ -39,3 +31,10 @@ AOS.init({
     once: true,
     duration: 1000
 });
+
+
+// getYear
+const year = document.querySelector('.year');
+
+let getYear = new Date().getFullYear();
+year.innerText = getYear;
