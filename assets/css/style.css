@@ -484,6 +484,13 @@ p.site-subtitles {
   overflow: hidden;
 }
 
+.first-card-project:hover .card-text,
+.second-card-project:hover .card-text,
+.third-card-project:hover .card-text {
+  opacity: .85;
+  transition: all 0.3s ease-in-out;
+}
+
 .first-card-project img,
 .second-card-project img,
 .third-card-project img {
@@ -506,13 +513,14 @@ p.site-subtitles {
   font-size: 1.3rem;
 }
 
-.first-card-project p.card-text,
-.second-card-project p.card-text,
-.third-card-project p.card-text {
+.first-card-project .card-text,
+.second-card-project .card-text,
+.third-card-project .card-text {
   opacity: .6;
   font-weight: 300;
   line-height: 1.8;
   letter-spacing: 0.3px;
+  transition: all 0.3s ease-in-out;
 }
 
 .first-card-project a svg,

@@ -17,6 +17,11 @@
     box-shadow: $shadow-card;
     overflow: hidden;
 
+    &:hover .card-text {
+        opacity: .85;
+        transition: $animation;
+    }
+
     img {
         filter: brightness(.8) contrast(1.2);
         transition: $animation;
@@ -33,11 +38,12 @@
         font-size: $larger;
     }
 
-    p.card-text {
+    .card-text {
         opacity: .6;
         font-weight: $thin;
         line-height: $line-large;
         letter-spacing: $space;
+        transition: $animation;
     }
 
     a {
