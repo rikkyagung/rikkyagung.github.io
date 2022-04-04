@@ -303,7 +303,7 @@ footer p.last-text a:hover {
 #hero {
   height: 80vh;
   position: relative;
-  background: url(../img/bg-image.jpg) no-repeat fixed center;
+  background: url(../img/bg-image.webp) no-repeat fixed center;
   background-size: cover;
   color: #EFEFEF;
   padding: 2.5rem 9rem;
