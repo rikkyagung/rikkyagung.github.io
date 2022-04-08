@@ -1,6 +1,6 @@
 # Portfolio Website - Bootstrap v5 and SCSS
 This is my first portfolio page. This website very simple and responsive.
-![homepage](/assets/img/project-2.png)
+![homepage](/assets/img/project-2.webp)
 
 ## Color Pallete
  Color         | Hex           
