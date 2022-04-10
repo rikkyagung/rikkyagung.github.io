@@ -17,7 +17,7 @@
     box-shadow: $shadow-card;
     overflow: hidden;
 
-    &:hover .card-text {
+    &:hover .project-description {
         opacity: .85;
         transition: $animation;
     }
@@ -38,7 +38,7 @@
         font-size: $larger;
     }
 
-    .card-text {
+    .project-description {
         opacity: .6;
         font-weight: $thin;
         line-height: $line-large;
@@ -75,4 +75,19 @@
 
 .icon {
     width: 5rem;
+}
+
+.project-description {
+    opacity: .6;
+}
+
+.tag {
+    font-size: .85rem;
+    flex-wrap: wrap;
+    li{
+        background-color: #36384d;
+        letter-spacing: 0;
+        padding: .1rem .3rem;
+        width: fit-content;
+    }
 }

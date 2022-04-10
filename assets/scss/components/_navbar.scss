@@ -21,7 +21,7 @@
     }
 }
 
-ul {
+ul.navbar {
     display: flex;
     @include flexStyle(flex-end);
     width: 100%;

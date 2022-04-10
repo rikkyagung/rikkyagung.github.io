@@ -1,31 +1,31 @@
-@import './variables';
+@import "./variables";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 html {
-    scrollbar-color: $primary-color $tersier-color;
+   scrollbar-color: $primary-color $tersier-color;
 }
 
 body {
-    background-color: $secondary-color;
-    font-family: $fontFamily;
-    scroll-behavior: smooth;
+   background-color: $secondary-color;
+   font-family: $fontFamily;
+   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    width: 1rem;
+   width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $primary-color;
-    border-radius: .25rem;
+   background-color: $primary-color;
+   border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0px 0px 3px 0px rgba(239, 239, 239, 0.5);
-    border-radius: .25rem;
+   box-shadow: inset 0px 0px 3px 0px rgba(239, 239, 239, 0.5);
+   border-radius: 0.25rem;
 }

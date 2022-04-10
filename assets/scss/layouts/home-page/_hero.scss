@@ -1,54 +1,48 @@
 #hero {
-    height: 80vh;
-    position: relative;
-    background: url(../img/bg-image.webp) no-repeat fixed center;
-    background-size: cover;
-    color: $tersier-color;
-    padding: $padding-large;
-
-    svg {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
+   height: 80vh;
+   position: relative;
+   background: url(../img/bg-image.webp) no-repeat fixed center;
+   background-size: cover;
+   color: $tersier-color;
+   padding: $padding-large;
+   svg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+   }
 }
 
 .myself {
-    margin-top: -3rem;
+   margin-top: -3rem;
 }
 
 .home-page-title {
-    font-weight: $thickest;
-    font-size: $biggest;
-    margin-bottom: 1rem;
+   font-weight: $thickest;
+   font-size: $biggest;
+   margin-bottom: 1rem;
 }
 
 p.site-subtitles {
-    font-size: $larger;
-    font-weight: $thin;
+   font-size: $larger;
+   font-weight: $thin;
 }
 
 .button a {
-    text-decoration: none;
-    display: block;
-    z-index: 1;
-
-    &:first-child {
-        @include button();
-
-        &:hover {
-            @include hoverButton;
-        }
-    }
-
-    &:last-child {
-        @include button(7.5rem, transparent, 2px solid $primary-color);
-
-        &:hover {
-            @include hoverButton;
-            background-color: $primary-color;
-
-        }
-    }
+   text-decoration: none;
+   display: block;
+   z-index: 1;
+   &:first-child {
+      @include button();
+      &:hover {
+         @include hoverButton;
+      }
+   }
+   &:last-child {
+      @include button(7.5rem, transparent, 2px solid $primary-color);
+      &:hover {
+         @include hoverButton;
+         background-color: $primary-color;
+      }
+   }
 }
