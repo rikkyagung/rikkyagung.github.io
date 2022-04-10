@@ -578,7 +578,7 @@ p.site-subtitles {
 #about-hero {
   height: 80vh;
   position: relative;
-  background: url(../img/bg-image.jpg) no-repeat fixed center;
+  background: url(../img/bg-image.webp) no-repeat fixed center;
   background-size: cover;
   color: #efefef;
   padding: 2.5rem 9rem;
@@ -752,7 +752,7 @@ p.site-subtitle {
   }
   li.active a {
     color: #efefef;
-    border-left: 0.2rem solid #efefef;
+    border-right: 0.2rem solid #efefef;
   }
   .hamburger-menu {
     display: flex;
