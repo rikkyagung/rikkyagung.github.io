@@ -10,9 +10,7 @@
     }
 }
 
-.first-card-project,
-.second-card-project,
-.third-card-project {
+.card-project {
     background-color: $primary-darker-color !important;
     box-shadow: $shadow-card;
     overflow: hidden;
@@ -68,10 +66,10 @@
     }
 }
 
-.first-card-project,
-.second-card-project {
-    margin-bottom: 2.5rem;
-}
+// .first-card-project,
+// .second-card-project {
+//     margin-bottom: 2.5rem;
+// }
 
 .icon {
     width: 5rem;
@@ -90,4 +88,10 @@
         padding: .1rem .3rem;
         width: fit-content;
     }
+}
+
+.wrapper-card-project {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
 }

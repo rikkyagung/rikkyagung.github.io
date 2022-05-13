@@ -92,7 +92,7 @@
       visibility: hidden;
    }
 
-   .second-card-project {
+   .card-project:nth-child(even) {
       .col-md-6:first-child {
          order: 2;
       }

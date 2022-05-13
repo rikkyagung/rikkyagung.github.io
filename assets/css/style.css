@@ -476,46 +476,34 @@ p.site-subtitles {
   margin-bottom: 2.8rem;
 }
 
-.first-card-project,
-.second-card-project,
-.third-card-project {
+.card-project {
   background-color: #27293f !important;
   box-shadow: 0px 13px 8px -7px #24263b;
   overflow: hidden;
 }
 
-.first-card-project:hover .project-description,
-.second-card-project:hover .project-description,
-.third-card-project:hover .project-description {
+.card-project:hover .project-description {
   opacity: .85;
   transition: all 0.3s ease-in-out;
 }
 
-.first-card-project img,
-.second-card-project img,
-.third-card-project img {
+.card-project img {
   filter: brightness(0.8) contrast(1.2);
   transition: all 0.3s ease-in-out;
   object-fit: contain;
 }
 
-.first-card-project img:hover,
-.second-card-project img:hover,
-.third-card-project img:hover {
+.card-project img:hover {
   filter: brightness(0.8) contrast(1.35);
   transition: all 0.3s ease-in-out;
   transform: scale(1.025);
 }
 
-.first-card-project .card-title,
-.second-card-project .card-title,
-.third-card-project .card-title {
+.card-project .card-title {
   font-size: 1.3rem;
 }
 
-.first-card-project .project-description,
-.second-card-project .project-description,
-.third-card-project .project-description {
+.card-project .project-description {
   opacity: .6;
   font-weight: 300;
   line-height: 1.8;
@@ -523,36 +511,23 @@ p.site-subtitles {
   transition: all 0.3s ease-in-out;
 }
 
-.first-card-project a svg,
-.second-card-project a svg,
-.third-card-project a svg {
+.card-project a svg {
   opacity: .6;
   transition: all 0.3s ease-in-out;
 }
 
-.first-card-project a svg path,
-.second-card-project a svg path,
-.third-card-project a svg path {
+.card-project a svg path {
   transition: all 0.3s ease-in-out;
 }
 
-.first-card-project a:hover svg,
-.second-card-project a:hover svg,
-.third-card-project a:hover svg {
+.card-project a:hover svg {
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
-.first-card-project a:hover path,
-.second-card-project a:hover path,
-.third-card-project a:hover path {
+.card-project a:hover path {
   fill: #6266f5;
   transition: all 0.3s ease-in-out;
-}
-
-.first-card-project,
-.second-card-project {
-  margin-bottom: 2.5rem;
 }
 
 .icon {
@@ -573,6 +548,12 @@ p.site-subtitles {
   letter-spacing: 0;
   padding: .1rem .3rem;
   width: fit-content;
+}
+
+.wrapper-card-project {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
 }
 
 #about-hero {
@@ -765,7 +746,7 @@ p.site-subtitle {
   aside {
     visibility: hidden;
   }
-  .second-card-project .col-md-6:first-child {
+  .card-project:nth-child(even) .col-md-6:first-child {
     order: 2;
   }
   .left-footer .button {
